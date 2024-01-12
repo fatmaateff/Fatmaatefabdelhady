@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form validation</title>
+    <script src="file1.js"></script>
+    <style src="file1.css"></style>
+</head>
+<body>
+    <form action="server.html">
+    <!-- validate by regex -->
+    <table>
+        <tr>
+            <td>Name</td>
+            <td> <input type="text"  id="username" placeholder="enter your full name"> </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td> <input type="password"  id="userpass" placeholder="password"> </td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td>
+                <select id="Coutry" name="country">
+                <option id="Egypt" value="10">Egypt</option>
+                <option id="USA" value="20">USA</option>
+                <option id="Kuwait" value="30">Kuwait</option>
+                <option id="German" value="40">German</option></select>
+            </td>
+        </tr>
+        <tr>
+            <td>ZIP:</td>
+            <td><input disabled id="zip" type="number" value="10"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Hoppies:</td>
+            <td><input type="checkbox">writing</td>
+            <td><input type="checkbox">reading</td>
+            <td><input type="checkbox">sleeping</td>
+            <td><input type="checkbox">swimming</td>
+        </tr>
+        <tr>
+            <td> <input type="submit"  value="login"> </td>
+            <td> <input type="reset"  value="cancel"> </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
